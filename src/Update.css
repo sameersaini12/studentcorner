@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:700');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    color: white;
+    margin-left: 30vh;
+}
+.header{
+    margin-top: -10vh;
+}
+.show-menu{
+    display: none;
+}
+
+body {
+    background-color: #353E49;
+}
+
+.header h3 {
+    color: rgb(184, 175, 175);
+    font-weight: lighter;
+    margin-left: 30vh;
+    padding-top: 1vh;
+}
+
+.menu li {
+    list-style: none;
+    color: white;
+    padding-left: 40px;
+    padding-top: 1.3rem;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu {
+    background-color: #272f38;
+    width: 60vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30vh;
+    margin-top: 5vh;
+    border-radius: 0.5rem;
+}
+
+.sidebar {
+    float: left;
+    margin: 7.5% 0;
+    width: 32%;
+    display: block;
+}
+
+.content {
+    background: #fff;
+    float: left;
+    height: 500vh;
+    position: relative;
+    width: 50%;
+    z-index: 2;
+}
+
+.menu li:hover {
+    color: red;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    font-family: 'Inconsolata';
+}
+
+h1:hover {
+    color: red;
+}
+
+h3:hover {
+    color: red;
+}
+
+.container {
+    position: absolute;
+    margin-left: 35vh;
+    padding-top: 3vh;
+}
+
+input {
+    width: 25vh;
+    height: 5vh;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Inconsolata';
+    background-color: #353E49;
+    color: white;
+    border-color: white;
+}
+
+::placeholder {
+    color: white;
+    font-style: italic;
+}
+
+@media only screen and (max-width:768px)
+{
+    .content{
+        position: absolute;
+        margin-top: 25vh;
+        width: 200vh;
+
+    }
+    .menu{
+        display: none;
+    }
+    .header{
+        position: fixed;
+        display: flex;
+        padding-top: 4rem;
+        background-color: #272f38;
+        width: 100%;
+        justify-content: center;
+        height: 30%;
+        flex-direction: column;
+        align-items: center
+    }
+    .header h1{
+        font-size: 1.5rem;     
+        margin-left: 6%; 
+        margin-top: -20%;
+
+    }
+    .header h3{
+        font-size: 1.2rem;
+        margin-left: 7%;
+    }
+    input{
+        display: none;
+    }
+    .line {
+        width: 20px;
+        height: 2px;
+        background: white;
+        margin: 2px;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        left: 63%;
+        top: 20%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+    .show-menu{
+        display: inherit;
+        position: absolute;
+        color:white;
+        font-size: 0.6rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        left: 45%;
+        top: 19%;
+    }
+    
+}
+@media only screen and (min-width: 768px)
+{
+    .menu{
+        margin-left: 15%;
+    }
+    .header h1{
+        margin-left: 15%;
+        margin-top: 4vh;
+        font-size: 1.5rem;
+    }
+    .header h3{
+        margin-left: 15%;
+    }
+    input
+    {
+        margin-left: -27vh;        
+    }
+}
+@media only screen and (min-width: 1200px)
+{
+    .menu{
+        margin-left: 40%;
+        width: ;
+
+    }
+    .header h1{
+        margin-left: 40%;
+    }
+    .header h3 {
+        margin-left: 40%;
+    }
+    input{
+        margin-left: -6vh;
+    }
+}

@@ -1,0 +1,30 @@
+.footer-section {
+    height: 350px;
+    background-color: #3c4554;
+    color:white;
+    display: flex;
+    padding:50px;
+    padding-right:100px;
+    justify-content: center;
+}
+
+.aboutus {
+    width:500px;
+    padding-right: 120px;
+}
+
+.aboutus > h2 {
+    font-size: 16px;;
+}
+
+.aboutus > h1 {
+    font-weight: 400;
+    padding-top:10px;
+}
+
+.aboutus > p {
+    text-align: justify;
+    color:rgb(214, 208, 208);
+    font-weight: 1;
+    padding-top:20px;
+}
