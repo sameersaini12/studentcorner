@@ -2,12 +2,13 @@ import React from 'react';
 import './Footer.css';
 
 function Footer() {
-    return (
+    return ( 
+    
         <div class="footer-section">
             <div className="aboutus">
                 <h2>ABOUT US</h2>
                 <h1>StudentCorner</h1>
-                <p>CollegeSpace, the Socio-Academic Portal of NSIT, is the most frequently visited website of NSIT. It was started out by a team of three enthusiastic students with an aim to provide a holistic solution to all student needs; those that are encountered during these four crucial years of college. Now, after five successful years, we have a large team of hardworking & committed students working in various departments such as web development, content writing & content collection. In short - We aim to make the life of every NSITian simpler & turn these four years into a smoother ride!</p>
+                <p>StudentCorner, the Socio-Academic Portal of YCMA, is the most frequently visited website of YMCA. It was started out by a team of two enthusiastic students with an aim to provide a holistic solution to all student needs; those that are encountered during these four crucial years of college. </p>
 
             </div>
             <div className="quick-links">
@@ -22,8 +23,12 @@ function Footer() {
                 <li>Copyright</li>
                 </ul>
             </div>
-            <div className="tweats">
-               <h1>Tweets section </h1>
+            <div className="social">
+            <h3>Contact us</h3>
+              <div className="social-list"><img className="footer_icon" src="./images/i5.png" alt="" /><span>ymca,faridabad</span></div>
+              <div className="social-list"><img className="footer_icon" src="images/i6.png" alt="" /><span>studentcornerymca@gmail.com</span></div>
+              <div className="social-list"><img className="footer_icon" src="images/i7.png"  alt="" /><span>9817620774</span></div>
+              
             </div>
         </div>
     )

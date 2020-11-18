@@ -6,6 +6,7 @@ import Body from './Body';
 import Footer from './Footer';
 import {Route , BrowserRouter as Router , Switch } from 'react-router-dom';
 import Update from './Update';
+import Contact from './Contact';
 
 
 function App() {
@@ -14,15 +15,18 @@ function App() {
       <Router>
         <div className="app">
           <Switch>
-         
             <Route path="/update">
               <Update />
+            </Route>
+            <Route path="/contact">
+              <Contact />
+              <Footer />
             </Route>
             <Route path="/">
                 <Home />
                 <Registration />
                 <Body />
-                <Footer />
+  
             </Route>
             
           </Switch>

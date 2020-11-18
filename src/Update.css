@@ -5,29 +5,29 @@
     box-sizing: border-box;
 }
 
-.header h1 {
+.update_header h1 {
     color: white;
     margin-left: 30vh;
 }
-.header{
+.update_header{
     margin-top: -10vh;
 }
-.show-menu{
+.update_show-menu{
     display: none;
 }
 
 body {
-    background-color: #353E49;
+    background-color: #3c4554;
 }
 
-.header h3 {
+.update_header > h3 {
     color: rgb(184, 175, 175);
     font-weight: lighter;
     margin-left: 30vh;
     padding-top: 1vh;
 }
 
-.menu li {
+.update_menu > li {
     list-style: none;
     color: white;
     padding-left: 40px;
@@ -36,7 +36,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.menu {
+.update_menu {
     background-color: #272f38;
     width: 60vh;
     height: 70vh;
@@ -47,14 +47,14 @@ body {
     border-radius: 0.5rem;
 }
 
-.sidebar {
+.update_sidebar {
     float: left;
     margin: 7.5% 0;
     width: 32%;
     display: block;
 }
 
-.content {
+.update_content {
     background: #fff;
     float: left;
     height: 500vh;
@@ -63,28 +63,29 @@ body {
     z-index: 2;
 }
 
-.menu li:hover {
+.update_menu > li:hover {
     color: red;
     font-size: 1.5rem;
     border-radius: 0.5rem;
     font-family: 'Inconsolata';
+    cursor:pointer;
 }
 
-h1:hover {
+.update_header > h1:hover {
     color: red;
 }
 
-h3:hover {
+.update_header > h3:hover {
     color: red;
 }
 
-.container {
+.update_container {
     position: absolute;
     margin-left: 35vh;
     padding-top: 3vh;
 }
 
-input {
+.update_container01 > input {
     width: 25vh;
     height: 5vh;
     font-size: 1.1rem;
@@ -94,25 +95,25 @@ input {
     background-color: #353E49;
     color: white;
     border-color: white;
+    outline-width: 0;
 }
 
 ::placeholder {
     color: white;
-    font-style: italic;
 }
 
 @media only screen and (max-width:768px)
 {
-    .content{
+    .update_content {
         position: absolute;
         margin-top: 25vh;
         width: 200vh;
 
     }
-    .menu{
+    .update_menu {
         display: none;
     }
-    .header{
+    .update_header {
         position: fixed;
         display: flex;
         padding-top: 4rem;
@@ -123,26 +124,26 @@ input {
         flex-direction: column;
         align-items: center
     }
-    .header h1{
+    .update_header h1{
         font-size: 1.5rem;     
         margin-left: 6%; 
         margin-top: -20%;
 
     }
-    .header h3{
+    .update_header h3{
         font-size: 1.2rem;
         margin-left: 7%;
     }
-    input{
+    .update_container01 > input{
         display: none;
     }
-    .line {
+    .update_line {
         width: 20px;
         height: 2px;
         background: white;
         margin: 2px;
     }
-    .hamburger {
+    .update_hamburger {
         position: absolute;
         cursor: pointer;
         left: 63%;
@@ -150,7 +151,7 @@ input {
         transform: translate(-5%, -50%);
         z-index: 2;
     }
-    .show-menu{
+    .update_show-menu{
         display: inherit;
         position: absolute;
         color:white;
@@ -163,36 +164,37 @@ input {
 }
 @media only screen and (min-width: 768px)
 {
-    .menu{
+    .update_menu{
         margin-left: 15%;
     }
-    .header h1{
+    .update_header>  h1{
         margin-left: 15%;
         margin-top: 4vh;
         font-size: 1.5rem;
     }
-    .header h3{
+    .update_header >  h3{
         margin-left: 15%;
     }
-    input
+
+    .update_container01 > input
     {
         margin-left: -27vh;        
     }
 }
 @media only screen and (min-width: 1200px)
 {
-    .menu{
+    .update_menu{
         margin-left: 40%;
         width: ;
 
     }
-    .header h1{
+    .update_header > h1{
         margin-left: 40%;
     }
-    .header h3 {
+    .update_header > h3 {
         margin-left: 40%;
     }
-    input{
+    .update_container01 > input{
         margin-left: -6vh;
     }
 }

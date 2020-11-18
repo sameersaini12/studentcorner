@@ -1,6 +1,6 @@
 import React from 'react';
 import './Body.css';
-import {Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 function Body() {
@@ -10,6 +10,7 @@ function Body() {
     return (
         <div className="Body">
             <div className="container">
+                <br /><br /><br />
                 <h1>Latest on <span>StudentCorner updates</span></h1><br />
                 <hr />
                 <Link to='/update'>
