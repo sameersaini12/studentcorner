@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/student-corner/static/css/main.1119072e.chunk.css",
-    "main.js": "/student-corner/static/js/main.57357bb3.chunk.js",
-    "main.js.map": "/student-corner/static/js/main.57357bb3.chunk.js.map",
-    "runtime-main.js": "/student-corner/static/js/runtime-main.45c9b70a.js",
-    "runtime-main.js.map": "/student-corner/static/js/runtime-main.45c9b70a.js.map",
-    "static/js/2.0b7c65c2.chunk.js": "/student-corner/static/js/2.0b7c65c2.chunk.js",
-    "static/js/2.0b7c65c2.chunk.js.map": "/student-corner/static/js/2.0b7c65c2.chunk.js.map",
-    "index.html": "/student-corner/index.html",
-    "precache-manifest.019955f1714e0c662ad8830db4c708e7.js": "/student-corner/precache-manifest.019955f1714e0c662ad8830db4c708e7.js",
-    "service-worker.js": "/student-corner/service-worker.js",
-    "static/css/main.1119072e.chunk.css.map": "/student-corner/static/css/main.1119072e.chunk.css.map",
-    "static/js/2.0b7c65c2.chunk.js.LICENSE.txt": "/student-corner/static/js/2.0b7c65c2.chunk.js.LICENSE.txt",
-    "static/media/Home.css": "/student-corner/static/media/hone02.5467cd01.jpg"
+    "main.css": "/studentcorner/static/css/main.eb75fe9f.chunk.css",
+    "main.js": "/studentcorner/static/js/main.9e84f106.chunk.js",
+    "main.js.map": "/studentcorner/static/js/main.9e84f106.chunk.js.map",
+    "runtime-main.js": "/studentcorner/static/js/runtime-main.a654e2fe.js",
+    "runtime-main.js.map": "/studentcorner/static/js/runtime-main.a654e2fe.js.map",
+    "static/js/2.38b96117.chunk.js": "/studentcorner/static/js/2.38b96117.chunk.js",
+    "static/js/2.38b96117.chunk.js.map": "/studentcorner/static/js/2.38b96117.chunk.js.map",
+    "index.html": "/studentcorner/index.html",
+    "precache-manifest.775bc9692f356815bc0a61e45a5c76e1.js": "/studentcorner/precache-manifest.775bc9692f356815bc0a61e45a5c76e1.js",
+    "service-worker.js": "/studentcorner/service-worker.js",
+    "static/css/main.eb75fe9f.chunk.css.map": "/studentcorner/static/css/main.eb75fe9f.chunk.css.map",
+    "static/js/2.38b96117.chunk.js.LICENSE.txt": "/studentcorner/static/js/2.38b96117.chunk.js.LICENSE.txt",
+    "static/media/Contact.css": "/studentcorner/static/media/back-07.ca862bdc.jpg",
+    "static/media/Home.css": "/studentcorner/static/media/hone02.5467cd01.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.45c9b70a.js",
-    "static/js/2.0b7c65c2.chunk.js",
-    "static/css/main.1119072e.chunk.css",
-    "static/js/main.57357bb3.chunk.js"
+    "static/js/runtime-main.a654e2fe.js",
+    "static/js/2.38b96117.chunk.js",
+    "static/css/main.eb75fe9f.chunk.css",
+    "static/js/main.9e84f106.chunk.js"
   ]
 }
