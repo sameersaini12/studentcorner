@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Home from './Home';
 import Registration from './Registration';
 import Body from './Body';
@@ -26,7 +25,7 @@ function App() {
                 <Home />
                 <Registration />
                 <Body />
-  
+                <Footer />
             </Route>
             
           </Switch>

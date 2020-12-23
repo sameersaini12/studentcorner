@@ -1,6 +1,3 @@
-.syallabus-container {
-    margin: 0 90px;
-}
 #customers {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
@@ -34,4 +31,21 @@
 
   .download > a {
     color: blue;
+  }
+
+  .datesheet {
+      margin:50px;
+  }
+
+  .odd-sem > h1 {
+      margin-bottom: 30px;
+      font-weight: 500;
+  }
+
+  .odd-sem > table {
+      margin-bottom: 70px;
+  }
+
+  .odd-sem > h1:hover {
+      color:red;
   }

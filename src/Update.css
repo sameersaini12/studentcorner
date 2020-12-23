@@ -33,17 +33,19 @@ body {
     padding-left: 40px;
     padding-top: 1.3rem;
     font-size: 1.1rem;
+    
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .update_menu {
     background-color: #272f38;
     width: 60vh;
-    height: 70vh;
+    height: auto;
     display: flex;
     flex-direction: column;
-    margin-left: 30vh;
+    margin-left: 30vw;
     margin-top: 5vh;
+    padding-bottom: 1.3rem;
     border-radius: 0.5rem;
 }
 
@@ -52,15 +54,6 @@ body {
     margin: 7.5% 0;
     width: 32%;
     display: block;
-}
-
-.update_content {
-    background: #fff;
-    float: left;
-    height: 500vh;
-    position: relative;
-    width: 50%;
-    z-index: 2;
 }
 
 .update_menu > li:hover {
@@ -85,31 +78,8 @@ body {
     padding-top: 3vh;
 }
 
-.update_container01 > input {
-    width: 25vh;
-    height: 5vh;
-    font-size: 1.1rem;
-    border-radius: 10px;
-    text-align: center;
-    font-family: 'Inconsolata';
-    background-color: #353E49;
-    color: white;
-    border-color: white;
-    outline-width: 0;
-}
-
-::placeholder {
-    color: white;
-}
-
 @media only screen and (max-width:768px)
 {
-    .update_content {
-        position: absolute;
-        margin-top: 25vh;
-        width: 200vh;
-
-    }
     .update_menu {
         display: none;
     }
@@ -133,9 +103,6 @@ body {
     .update_header h3{
         font-size: 1.2rem;
         margin-left: 7%;
-    }
-    .update_container01 > input{
-        display: none;
     }
     .update_line {
         width: 20px;
@@ -185,7 +152,6 @@ body {
 {
     .update_menu{
         margin-left: 40%;
-        width: ;
 
     }
     .update_header > h1{

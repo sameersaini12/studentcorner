@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css';
+import {Link} from "react-router-dom";
 
 function Footer() {
     return ( 
@@ -13,14 +14,15 @@ function Footer() {
             </div>
             <div className="quick-links">
                 <ul type="circle">
-                <li>Notices</li>
-                <li>Datesheets</li>
-                <li>Results</li>
-                <li>Notes</li>
-                <li>Exam papers</li>
-                <li>Syallabus</li>
-                <li>Disclaimer</li>
-                <li>Copyright</li>
+                <li><Link to="/update" style={{textDecoration: "none" , color: 'inherit' }} >Notice</Link></li>
+                <li><Link to="/update" style={{textDecoration: "none" , color: 'inherit' }} >Timetable</Link></li>
+                <li><Link to="/update" style={{textDecoration: "none" , color: 'inherit' }} >Datesheet</Link></li>
+                <li><Link to="/update" style={{textDecoration: "none" , color: 'inherit' }} >Notes</Link></li>
+                <li><Link to="/update" style={{textDecoration: "none" , color: 'inherit' }} >Exam Papers</Link></li>
+                <li><Link to="/update" style={{textDecoration: "none" , color: 'inherit' }} >Academics</Link></li>
+                <li><Link to="/update" style={{textDecoration: "none" , color: 'inherit' }} >Syallabus</Link></li>
+                <li><Link to="/update" style={{textDecoration: "none" , color: 'inherit' }} >Contribute</Link></li>
+                <li><Link to="/contact" style={{textDecoration: "none" , color: 'inherit' }} >Contact Us</Link></li>
                 </ul>
             </div>
             <div className="social">

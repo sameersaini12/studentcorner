@@ -8,10 +8,10 @@
     align-items: center;
     justify-content: center;
     background-color: lightgray;
-    margin-left:60px;
+    margin:60px;
     border-radius: 10px;
     height:400px;
-    width:300px
+    width:250px
 }
 
 
@@ -40,14 +40,35 @@ button {
     flex-direction: column;
     background-color: lightgray;
     margin-left:60px;
-    margin-right: 60px;
+    margin: 60px;
     border-radius: 10px;
     height:400px;
-    width:300px;
+    width:250px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 .subject-table {
     margin:20px;
+}
+
+.note-01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.note-01 > h3 {
+    margin-left: 10%;
+}
+
+.note-01 > select {
+   width:100px;
+}
+
+@media screen and (max-width: 900px) {
+    .notes {
+        flex-direction: column;
+    }
 }

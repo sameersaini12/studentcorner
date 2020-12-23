@@ -8,7 +8,7 @@ function Syallabus() {
             <table id="customers">
   <tr>
     <th>Branch</th>
-    <th>Syallabus Download Link</th>
+    <th style={{textAlign:"center"}}>Exam Papers Download Link</th>
     
   </tr>
   <tr>

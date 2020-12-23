@@ -1,18 +1,77 @@
-import React,{} from 'react'
+import React,{useEffect, useState} from 'react';
 import './Timetable.css';
-import {Button} from 'react-bootstrap';
+import {db} from './firebase';
 
 function Timetable() {
 
+    const[subject,setSubject] = useState('');
+    const[message, setMessage] = useState('');
+    const[change, setChange] = useState(false);
+    const[msgPrint , setMsgPrint] = useState([]);
 
-  const handleModal = ()=> {
-    return (
-      console.log("click")
-    )
-  }
+    const handleModal = ()=> {
+      return (
+        setChange(!change)
+      )
+    }
+
+    const handleSubmit = (e)=> {
+        e.preventDefault();
+        db.collection('timetable').add({
+            subject: subject,
+            message:message,
+        })
+        .then(()=> {
+            alert("Your message has been submitted!");
+        })
+        .catch((err)=> {
+            alert(err.message);
+
+        });
+        setSubject("");
+        setMessage('');
+    }
+
+    useEffect(()=> {
+      const fetchMsgs = async () => {
+        const msgCollection = await db.collection('timetable').get();
+        setMsgPrint(
+          msgCollection.docs.map((doc)=> {
+            return (doc.data()
+               )
+          })
+        );
+      };
+      fetchMsgs();
+    },[])
+
     return (
 
         <div className="timetable">
+          {(change)?
+           <div className="timetable-prompt">
+           <h1>Enter Message for students</h1>
+           
+             <input type="text" placeholder="Subject" value={subject} onChange={(e)=> setSubject(e.target.value)} /><br />
+             <textarea placeholder="Enter text" value={message} onChange={(e)=> setMessage(e.target.value)} ></textarea>
+             <div className="buttons">
+             <button onClick={handleSubmit}>Send...</button>
+             <button onClick={handleModal}>Cancel</button>
+             </div>
+         </div>
+         :
+         ""}
+            <ul className="update-timetable-list">
+              {msgPrint.map((item)=> {
+                return (
+                  <li className="list-of-timetable-update">
+                    <p><span>{item.subject} </span>: {item.message}</p>
+                  </li>
+                )
+              })}
+            </ul>
+          
+<div className="table">
           <table >
   <thead >
     <tr>
@@ -28,7 +87,7 @@ function Timetable() {
   <tbody>
     <tr>
       <th>Monday </th>
-      <td>ETC<br />(Ms. Mamta)<Button onClick={ handleModal}>Edit</Button></td>
+      <td>ETC<br />(Ms. Mamta)</td>
       <td>AEC<br />(Dr. Archana Aggarwal)</td>
       <td>Mathematics-III<br />(Dr. Ramu Dubey)</td>
       <td>B</td>
@@ -79,6 +138,8 @@ function Timetable() {
   </tbody>
           
   </table>
+  </div>
+  <button className="changeTime" onClick={ handleModal}>Change Time</button>
           </div>
     )
 }

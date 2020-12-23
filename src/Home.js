@@ -24,10 +24,10 @@ function Home() {
                 </div>
                 
                 <div className="nav-right">
-                    <h3>Home</h3>
+                    <h3><a href="#" style={{textDecoration: "none" , color: 'inherit' }}>Home</a></h3>
                     <h3>About </h3>
                     <h3>Our Team</h3>
-                    <h3>Updates</h3>
+                    <h3><Link to="/update" style={{textDecoration: "none" , color: 'inherit' }} >Updates</Link></h3>
                     <h3><Link to="/contact" style={{textDecoration: "none" , color: 'inherit' }} >Contact</Link></h3>
                     
                 </div>

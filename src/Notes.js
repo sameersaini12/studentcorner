@@ -19,63 +19,42 @@ function Notes() {
         {
             return (
                 <>
-                    <table className="subject-table">
-                        <thead>
-                        <tr>
-                        <th>Subjects</th>
-                        <th>Download</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>AEC</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td>Maths</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td>ETC</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td>DSA</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td>Scilab</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td>DE</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td>AEC LAB</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <td>DSA LAB</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                       
-                    </table>
+                    <table id="customers">
+  <tr>
+    <th>Branch</th>
+    <th>Notes Download Link</th>
+    
+  </tr>
+  <tr>
+    <td>CE</td>
+    <td className="download"><a href="https://1drv.ms/b/s!AmH-WMOVk4ixhaNb7pjclzI_Km43dw?e=AcgjyV">Download</a></td>
+    
+  </tr>
+  <tr>
+    <td>IT</td>
+    <td className="download"><a href="https://1drv.ms/b/s!AmH-WMOVk4ixhaNb7pjclzI_Km43dw?e=AcgjyV">Download</a></td>
+  </tr>
+  <tr>
+    <td>ECE</td>
+    <td className="download"><a href="https://1drv.ms/b/s!AmH-WMOVk4ixhaNb7pjclzI_Km43dw?e=AcgjyV">Download</a></td>
+  </tr>
+  <tr>
+    <td>Mech</td>
+    <td className="download"><a href="https://1drv.ms/b/s!AmH-WMOVk4ixhaNb7pjclzI_Km43dw?e=AcgjyV">Download</a></td>
+  </tr>
+  <tr>
+    <td>EE</td>
+    <td className="download"><a href="https://1drv.ms/b/s!AmH-WMOVk4ixhaNb7pjclzI_Km43dw?e=AcgjyV">Download</a></td>
+  </tr>
+  <tr>
+    <td>Civil</td>
+    <td className="download"><a href="https://1drv.ms/b/s!AmH-WMOVk4ixhaNb7pjclzI_Km43dw?e=AcgjyV">Download</a></td>
+  </tr>
+  <tr>
+    <td>ECS</td>
+    <td className="download"><a href="https://1drv.ms/b/s!AmH-WMOVk4ixhaNb7pjclzI_Km43dw?e=AcgjyV">Download</a></td>
+  </tr>
+</table>
                 </>
             )
         }
@@ -84,16 +63,17 @@ function Notes() {
     return (
         <div className="notes">
             <div className="notes-container">
-                <label>Year 
+                <div className="note-01">
+                <h3>Year </h3>
                 <select onChange= {e => setSem({value: e.target.value})}>
                     <option value="first" >First</option>
                     <option value="second" >Second</option>
                     <option value="third" >Third</option>
                     <option value="fourth" >Fourth</option>
                 </select>
-                </label>
+                </div>
                 <br />
-                <label>Branch
+               <div className="note-01"><h3>Branch</h3>
                 <select onChange= {e => setBranch({value: e.target.value})}>
                     <option value="ce" >CE</option>
                     <option value="it" >IT</option>
@@ -102,7 +82,7 @@ function Notes() {
                     <option value="ece" >ECE</option>
                     <option value="civil" >Civil</option>
                 </select>
-                </label>
+                </div>
                 <br />
                 <button type="submit" onClick={handleSubmit} >Get Notes</button>
             </div>

@@ -70,3 +70,10 @@
     margin-left: 50px;
     margin-top:45px
 }
+
+@media screen and (max-width: 768px) {
+    .update-content {
+        margin-top: 205.5px;
+        width:100vw;
+    }
+}
